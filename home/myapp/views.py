@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
-from .serializers import WorkSerializer, ArtistSerializer, UserSerializer
+from .serializers import WorkSerializer, ArtistSerializer, UserSerializer, ClientSerializer
 from rest_framework import viewsets, permissions
 from rest_framework.views import APIView
 from .models import Client, Artist, Work
@@ -23,10 +23,8 @@ class RegistrationAPIView(APIView):
 
 
 class ClientViewSet(viewsets.ReadOnlyModelViewSet):
-
     queryset = Client.objects.all()
-    serializer_class = UserSerializer
-
+    serializer_class = ClientSerializer
 
 class WorkViewSet(viewsets.ModelViewSet):
     """
