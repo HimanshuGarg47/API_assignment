@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Work, Artist, Client
 
-# Register your models here.
+admin.site.register(Work)
+admin.site.register(Artist)
+admin.site.register(Client)

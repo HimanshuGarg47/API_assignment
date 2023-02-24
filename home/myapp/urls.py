@@ -1,8 +1,7 @@
-from django.urls import path
-from .views import WorkList, ArtistList, RegisterUser
+from django.urls import path, include
+# from rest_framework import routers
+from .views import WorkViewSet, RegistrationAPIView, ArtistViewSet
 
 urlpatterns = [
-    path('api/works/', WorkList.as_view(), name='work-list'),
-    path('api/artists/', ArtistList.as_view(), name='artist-list'),
-    path('api/register/', RegisterUser.as_view(), name='register-user'),
+    path('api/register/', RegistrationAPIView.as_view(), name='register'),
 ]

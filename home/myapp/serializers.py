@@ -1,10 +1,20 @@
 from rest_framework import serializers
 from .models import Work, Artist, Client
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True)
+
     class Meta:
         model = Client
-        fields = ['name', 'username', 'email']
+        fields = ('username', 'password')
+
+    def create(self, validated_data):
+        user = Client.objects.create(name=validated['name'],
+            username=validated_data['username']
+        )
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
 
 class WorkSerializer(serializers.ModelSerializer):
     class Meta:
