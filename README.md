@@ -1,6 +1,6 @@
-# Art Gallery API
+# Client Artist Work API EndPoints
 
-This is a Django REST API for an art gallery. It allows users to view, search, and filter works of art, as well as register for an account.
+It allows users to view, search, and filter works of art, as well as register for an account.
 
 ## Installation
 
@@ -27,6 +27,9 @@ To access the Django admin panel, you'll need to create a superuser account. You
 ### Running the Server
 
 To run the server, use the command `python manage.py runserver`. The server will be accessible at `http://localhost:8000/`.
+
+### Working Output
+
 
 ## Contributing
 
