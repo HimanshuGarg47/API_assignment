@@ -30,7 +30,7 @@ To run the server, use the command `python manage.py runserver`. The server will
 
 ### Working Output
 
-
+![alt text](https://github.com/HimanshuGarg47/API_assignment/blob/master/home/static/images/Screenshot%20(156).png?raw=true)
 ## Contributing
 
 This project is open to contributions! If you find a bug or want to add a new feature, please create a new issue or pull request.
