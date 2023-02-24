@@ -30,6 +30,33 @@ To run the server, use the command `python manage.py runserver`. The server will
 
 ### Working Output
 
+Client Api endpoint (http://127.0.0.1:8000/api/client)
+
+![This is an image](home/static/images/Screenshot%20(159).png))
+
+![This is an image](home/static/images/Screenshot%20(156).png)
+
+Work List (http://127.0.0.1:8000/api/works)
+
+![This is an image](home/static/images/Screenshot%20(157).png)
+
+Artist List API (http://127.0.0.1:8000/api/register)
+
+![This is an image](home/static/images/Screenshot%20(158).png)
+
+Registration API Endpoint Post only (http://127.0.0.1:8000/api/register)
+
+![This is an image](home/static/images/Screenshot%20(160).png)
+
+Client API Endpoint (http://127.0.0.1:8000/api/client)
+
+![This is an image](home/static/images/Screenshot%20(162).png)
+
+Admin Interface (http://127.0.0.1:8000/admin)
+
+![This is an image](home/static/images/Screenshot%20(163).png)
+
+
 
 ## Contributing
 
