@@ -27,8 +27,11 @@ class WorkSerializer(serializers.ModelSerializer):
         model = Work
         fields = ('id', 'link', 'work_type')
 
+
 class ArtistSerializer(serializers.ModelSerializer):
     works = WorkSerializer(many=True, read_only=True)
+    rating = serializers.StringRelatedField(many=True)
+
     class Meta:
         model = Artist
-        fields = ('id', 'name', 'works')
+        fields = ('id', 'name', 'works', 'rating')
